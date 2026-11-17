@@ -1,36 +1,21 @@
 @echo off
-chcp 65001 >nul
 cd /d "%~dp0"
-echo ============================================
-echo   Глаз Аргуса — локальный запуск сайта
-echo ============================================
+echo Starting Glaz Argusa...
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0local-server.ps1"
+if not errorlevel 1 goto :eof
 echo.
-echo [1/2] Запускаю сервер...
-echo [2/2] Сейчас откроется браузер — не закрывайте это окно.
+echo PowerShell local-server failed, trying Python...
 echo.
-
-:: Основной способ — через PowerShell (как в START-SITE.bat) — сам выберет свободный порт и откроет браузер
-powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0local-server.ps1" "/"
-if %errorlevel% equ 0 goto :eof
-
-echo.
-echo PowerShell сервер не запустился, пробую Python...
-echo.
-
-:: Fallback 1: Python
-python -m http.server 8000 --bind 127.0.0.1 2>nul
-if %errorlevel% equ 0 goto :eof
-python3 -m http.server 8000 --bind 127.0.0.1 2>nul
-if %errorlevel% equ 0 goto :eof
-
-:: Fallback 2: npx
-echo Пробую npx serve...
+timeout /t 1 >nul
+start "" "http://localhost:8000"
+python -m http.server 8000 --bind 127.0.0.1
+if not errorlevel 1 goto :eof
+python3 -m http.server 8000 --bind 127.0.0.1
+if not errorlevel 1 goto :eof
 npx --yes serve . -l 8000
-
 if errorlevel 1 (
   echo.
-  echo Не удалось запустить сервер. Установите Python 3 или Node.js
-  echo Сайт находится в папке: %~dp0
-  echo Откройте index.html вручную в браузере.
+  echo Failed to start server. Please install Python or Node.js
+  echo Open index.html manually: %~dp0
   pause
 )
