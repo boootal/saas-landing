@@ -39,6 +39,15 @@
   --nd-bg:#fffaf5;
 }
 .site-wrap{min-height:100vh;background:var(--nd-bg);}
+.home-section{padding:28px 0 !important;}
+.nd-hero--full{padding-top:32px !important; padding-bottom:20px !important; min-height:520px !important;}
+.nd-hero__inner{padding-top:18px !important; padding-bottom:12px !important;}
+.nd-section-head{margin-bottom:16px !important;}
+.nd-cards{gap:12px !important;}
+.nd-card{padding:14px !important;}
+.container{padding-left:16px !important; padding-right:16px !important;}
+.site-footer{padding-top:20px !important;}
+
 /* оранжевый акцентный градиент для hero highlight */
 .argus-pill-orange{background:#ff6a00;color:#fff;border:0;}
 .argus-grid{display:grid;gap:16px}
@@ -136,7 +145,7 @@
   <div class="container nd-hero__inner">
     <div class="nd-hero__content" style="max-width:680px">
       <h1 class="nd-hero__title" data-i18n="hero.title">Поиск по приватным и слитым базам</h1>
-      <p class="nd-hero__lead" data-i18n="hero.lead">Глаз Аргуса ищет <span>по приватным и слитым базам</span> — телефон, почта, ник, фото, паспорт, авто и соцсети. <span>Один запрос — полный цифровой след.</span></p>
+      <p class="nd-hero__lead" data-i18n="hero.lead">Глаз Аргуса ищет <span>по приватным и слитым базам</span> телефон, почта, ник, фото, паспорт, авто и соцсети. <span>Один запрос — полный цифровой след.</span></p>
 <div class="nd-hero__actions" style="margin-top:22px">
         <a class="nd-btn nd-btn--primary nd-btn--xl" href="mailto:hello@argus.eye" data-i18n="hero.cta1"><i class="fa-solid fa-eye"></i> Открыть Око</a>
         <a class="nd-btn nd-btn--bright nd-btn--xl" href="#demo" data-i18n="hero.cta2"><i class="fa-regular fa-file-lines"></i> Пример отчёта</a>
@@ -149,7 +158,7 @@
 <!-- ЧТО ИЩЕМ -->
 <section class="home-section" id="capabilities">
   <div class="container">
-    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><div class="nd-section-head__titlerow"><h2 class="nd-section-head__title" data-i18n="sec.cap.title">Что находит Око</h2></div><p class="nd-section-head__lead" data-i18n="sec.cap.lead">Один идентификатор — десятки связанных сущностей. Ищем по приватным, слитым и открытым источникам.</p></div></div>
+    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><div class="nd-section-head__titlerow"><h2 class="nd-section-head__title" data-i18n="sec.cap.title">Что находит Око</h2></div><p class="nd-section-head__lead" data-i18n="sec.cap.lead">Один идентификатор. Десятки связанных сущностей. Ищем по приватным, слитым и открытым источникам.</p></div></div>
     <div class="nd-cards stagger" style="--cols:3">
       <div class="nd-card"><div class="nd-card__head"><span class="nd-mark nd-mark--orange"><i class="fa-solid fa-phone"></i></span><span class="nd-badge nd-badge--orange">хит</span></div><h3 class="nd-h3">Телефон</h3><p class="nd-lead" style="font-size:13px">ФИО, оператор, регион, мессенджеры, слитые заказы, карты лояльности, соцсети по номеру.</p><div class="nd-tags"><span class="nd-chip nd-chip--sm">пробив</span><span class="nd-chip nd-chip--sm">Telegram</span><span class="nd-chip nd-chip--sm">WhatsApp</span></div></div>
       <div class="nd-card"><div class="nd-card__head"><span class="nd-mark nd-mark--blue"><i class="fa-solid fa-envelope"></i></span></div><h3 class="nd-h3">Почта и логин</h3><p class="nd-lead" style="font-size:13px">Утечки паролей, HaveIBeenPwned, форумы, регистрации, связанные телефоны и профили.</p><div class="nd-tags"><span class="nd-chip nd-chip--sm">утечки</span><span class="nd-chip nd-chip--sm">пароли</span><span class="nd-chip nd-chip--sm">OSINT</span></div></div>
@@ -177,8 +186,7 @@
         <div class="fake-typing" id="fakeTyping" style="margin-top:16px;color:var(--nd-muted)"></div>
       </div>
       <div style="padding:18px">
-        <div class="nd-tabs" style="margin-bottom:12px"><button class="nd-tab is-active" aria-current="page"><i class="fa-solid fa-share-nodes" style="margin-right:6px"></i>Связи</button><button class="nd-tab"><i class="fa-solid fa-database" style="margin-right:6px"></i>Утечки</button><button class="nd-tab"><i class="fa-solid fa-at" style="margin-right:6px"></i>Соцсети</button><button class="nd-tab"><i class="fa-solid fa-clock-rotate-left" style="margin-right:6px"></i>История</button></div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
           <div class="nd-card nd-card--sm" style="background:var(--nd-surface-1);box-shadow:none"><div style="font-weight:600;margin-bottom:6px"><i class="fa-solid fa-people-group" style="color:#ff6a00"></i> Родственники</div><div class="nd-lead" style="font-size:13px">Петрова А. И. — супруга, Петров Д. И. — сын, 2012 г.р.</div></div>
           <div class="nd-card nd-card--sm" style="background:var(--nd-surface-1);box-shadow:none"><div style="font-weight:600;margin-bottom:6px"><i class="fa-solid fa-car-side" style="color:#0ea5e9"></i> Авто</div><div class="nd-lead" style="font-size:13px">Kia Rio, А 123 МР 799 — залог, 2 ДТП, без ограничений.</div></div>
           <div class="nd-card nd-card--sm" style="background:var(--nd-surface-1);box-shadow:none"><div style="font-weight:600;margin-bottom:6px"><i class="fa-solid fa-shield-halved" style="color:#ef4444"></i> Утечки</div><div class="nd-lead" style="font-size:13px">СДЭК 2023, Яндекс.Еда 2022, VK 2024 — пароли не найдены.</div></div>
@@ -253,9 +261,9 @@ window.addEventListener('scroll',()=>{
 const i18n={
  ru:{
   "nav.home":"Главная","nav.pricing":"Тарифы",
-  "hero.title":"Поиск по приватным и слитым базам","hero.lead":"Глаз Аргуса ищет <span>по приватным и слитым базам</span> — телефон, почта, ник, фото, паспорт, авто и соцсети. <span>Один запрос — полный цифровой след.</span>",
+  "hero.title":"Поиск по приватным и слитым базам","hero.lead":"Глаз Аргуса ищет <span>по приватным и слитым базам</span> телефон, почта, ник, фото, паспорт, авто и соцсети. <span>Один запрос — полный цифровой след.</span>",
   "hero.cta1":"Открыть Око","hero.cta2":"Пример отчёта",
-  "sec.cap.title":"Что находит Око","sec.cap.lead":"Один идентификатор — десятки связанных сущностей. Ищем по приватным, слитым и открытым источникам.",
+  "sec.cap.title":"Что находит Око","sec.cap.lead":"Один идентификатор. Десятки связанных сущностей. Ищем по приватным, слитым и открытым источникам.",
   "sec.demo.t":"Пример отчёта","sec.demo.lead":"Живая демонстрация — посмотрите как выглядит результат.",
   "sec.demo.try":"Попробовать","sec.func.t":"Функционал","sec.pricing.t":"Тарифы","sec.pricing.lead":"Оплата за результат — без подписок и скрытых условий. Есть бесплатный тест на 3 запроса.",
   "sec.how.t":"Как это работает","sec.how.lead":"Три шага от запроса до досье с источниками и оценкой риска.",
@@ -265,9 +273,9 @@ const i18n={
  },
  en:{
   "nav.home":"Home","nav.pricing":"Pricing",
-  "hero.title":"Private & leaked databases search","hero.lead":"Argus Eye searches <span>private and leaked databases</span> — phone, email, nickname, photo, ID, vehicle and socials. <span>One query — full digital footprint.</span>",
+  "hero.title":"Private & leaked databases search","hero.lead":"Argus Eye searches <span>private and leaked databases</span> phone, email, nickname, photo, ID, vehicle and socials. <span>One query — full digital footprint.</span>",
   "hero.cta1":"Open the Eye","hero.cta2":"Sample report",
-  "sec.cap.title":"What the Eye finds","sec.cap.lead":"One identifier — dozens of linked entities. We search private, leaked and open sources.",
+  "sec.cap.title":"What the Eye finds","sec.cap.lead":"One identifier. Dozens of linked entities. We search private, leaked and open sources.",
   "sec.demo.t":"Sample report","sec.demo.lead":"Live demo — see what the result looks like.",
   "sec.demo.try":"Try it","sec.func.t":"Features","sec.pricing.t":"Pricing","sec.pricing.lead":"Pay for result — no subscriptions, no hidden fees. 3 free trial queries.",
   "sec.how.t":"How it works","sec.how.lead":"Three steps from query to dossier with sources and risk score.",
