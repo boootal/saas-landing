@@ -4,4 +4,4 @@ index__q_*.html
 START-SITE.bat
 local-*.json
 local-*.ps1
-assets/
+/assets/
