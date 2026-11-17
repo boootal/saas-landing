@@ -1,0 +1,1 @@
+(()=>{"use strict";(function(){const t=globalThis.performance?.getEntriesByType?.("navigation")?.[0]?.type;return"reload"===t||"back_forward"===t})()&&(history.scrollRestoration="auto")})();

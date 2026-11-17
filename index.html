@@ -1,0 +1,427 @@
+<!DOCTYPE html><html lang="ru" data-theme="dark" style="color-scheme: dark"><head>
+	<link rel="expect" href="#page-end" blocking="render">
+	<script src="static/assets/js/scroll-restore.7ae0cf45f514.js"></script>
+	<link href="static/assets/css/app.2ba869cd2c29.css" rel="stylesheet">
+	<link href="static/assets/css/page-product.3789b2a2f49d.css" rel="stylesheet" data-page-style="true">
+	<link href="static/assets/css/app-tail.e7cf5cf43e08.css" rel="stylesheet" data-site-tail="">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Глаз Аргуса — ищет информацию по приватным и слитым базам</title>
+	<meta name="description" content="Глаз Аргуса — Там, где обрывается след, открывается Око. Поиск по приватным и слитым базам: телефон, почта, ник, фото, паспорт, авто, соцсети.">
+	<link rel="canonical" href="https://argus.example/">
+	<meta property="og:site_name" content="Глаз Аргуса">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Глаз Аргуса — поиск по приватным и слитым базам">
+	<meta property="og:description" content="Там, где обрывается след, открывается Око.">
+	<meta property="og:locale" content="ru_RU">
+	<meta name="theme-color" content="#ff6a00">
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicon/sq-orig/favicon-32x32.png">
+<style>
+/* ===== ОРАНЖЕВАЯ ТЕМА ПОВЕРХ ШАБЛОНА — светлая и тёмная ===== */
+:root{
+  --nd-primary:#ff6a00;
+  --nd-primary-hover:#ff7f1a;
+  --nd-primary-press:#e55f00;
+  --nd-primary-soft:rgba(255,106,0,.14);
+  --nd-ring:rgba(255,106,0,.55);
+  --nd-logo-shadow:rgba(255,106,0,.45);
+  --nd-accent:#ff6a00;
+}
+:root[data-theme=light]{
+  --nd-primary:#ff6a00;
+  --nd-primary-hover:#e55f00;
+  --nd-primary-press:#cc5500;
+  --nd-primary-soft:rgba(255,106,0,.10);
+  --nd-ring:rgba(255,106,0,.40);
+  --nd-logo-shadow:#ffd0a8;
+  --nd-bg:#fffaf5;
+}
+:root[data-theme=light] .site-wrap{background:radial-gradient(1200px 600px at 70% -10%, rgba(255,106,0,.08), transparent 60%), linear-gradient(180deg, #fff 0%, #fffaf5 100%);}
+.site-wrap{min-height:100vh;background:radial-gradient(900px 600px at 70% -8%, rgba(255,106,0,.07), transparent 65%), var(--nd-bg);}
+/* оранжевый акцентный градиент для hero highlight */
+.argus-accent{background:linear-gradient(90deg,#ff6a00 0%,#ff9a3d 50%,#ff6a00 100%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.argus-pill-orange{background:linear-gradient(135deg,#ff6a00,#ff8a2e);color:#fff;border:0;box-shadow:0 8px 24px rgba(255,106,0,.35);}
+.argus-grid{display:grid;gap:16px}
+.argus-kpi{display:flex;align-items:center;gap:14px}
+.argus-kpi b{font-size:28px;line-height:1;letter-spacing:-.02em}
+.argus-kpi small{display:block;font-size:12px;color:var(--nd-muted)}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s var(--nd-ease-expo), transform .6s var(--nd-ease-expo)}
+.reveal.in{opacity:1;transform:none}
+.stagger > *{opacity:0;transform:translateY(10px)}
+.stagger.in > *{animation:staggerIn .55s var(--nd-ease-expo) forwards}
+.stagger.in > *:nth-child(1){animation-delay:.05s}
+.stagger.in > *:nth-child(2){animation-delay:.12s}
+.stagger.in > *:nth-child(3){animation-delay:.18s}
+.stagger.in > *:nth-child(4){animation-delay:.24s}
+.stagger.in > *:nth-child(5){animation-delay:.30s}
+.stagger.in > *:nth-child(6){animation-delay:.36s}
+@keyframes staggerIn{to{opacity:1;transform:none}}
+.hero-search{position:relative;display:flex;align-items:center;gap:10px;max-width:560px;margin-top:18px;padding:6px 6px 6px 14px;border-radius:999px;background:var(--nd-card-bg);box-shadow:var(--nd-card-shadow);backdrop-filter:blur(12px)}
+.hero-search input{flex:1;min-width:0;border:0;background:transparent;outline:0;font:14px var(--nd-font-sans);color:var(--nd-fg)}
+.hero-search input::placeholder{color:var(--nd-muted)}
+.hero-orb{position:absolute;right:6%;top:52%;width:420px;height:420px;pointer-events:none;opacity:.5;filter:blur(40px);background:radial-gradient(circle at 30% 30%, #ff9a3d 0%, #ff6a00 45%, transparent 72%);transform:translateY(-50%);animation:orbFloat 6s ease-in-out infinite}
+@keyframes orbFloat{0%,100%{transform:translateY(-50%) scale(1)}50%{transform:translateY(-54%) scale(1.03)}}
+.argus-mono{font-family:var(--nd-font-mono);font-size:12px;letter-spacing:.02em}
+.nd-hero__visual .nd-app-menu{filter:hue-rotate(18deg) saturate(1.15);}
+:root[data-theme=light] .nd-hero__visual .nd-app-menu{filter:hue-rotate(18deg) saturate(1.2) brightness(1.05);}
+.argus-bento{display:grid;grid-template-columns:1.4fr .9fr;gap:16px}
+.argus-bento .home-bento__tile{animation:nd-glass-in .6s var(--nd-ease-expo) both}
+@media(max-width:900px){.argus-bento{grid-template-columns:1fr}}
+.price-card{position:relative;overflow:hidden}
+.price-card.is-best{box-shadow:0 0 0 1px rgba(255,106,0,.35),0 12px 40px rgba(255,106,0,.18)}
+.price-card.is-best::before{content:"Выбор команды";position:absolute;top:12px;right:12px;padding:4px 8px;font-size:11px;font-weight:650;color:#fff;background:#ff6a00;border-radius:999px}
+.argus-steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.argus-steps li{list-style:none;position:relative;padding:20px 18px 18px 18px}
+.argus-steps li::before{counter-increment:step;content:counter(step);position:absolute;top:14px;right:14px;width:28px;height:28px;display:grid;place-items:center;font:12px var(--nd-font-mono);font-weight:700;color:#fff;background:var(--nd-primary);border-radius:50%}
+@media(max-width:780px){.argus-steps{grid-template-columns:1fr}}
+.argus-logo-text{font-weight:800;letter-spacing:-.03em;font-size:18px;line-height:1}
+.argus-logo-text span{color:var(--nd-primary)}
+.site-header__logo svg{width:36px;height:22px}
+.nd-hero__title .accent-word{color:var(--nd-primary)}
+.typewriter{border-right:2px solid var(--nd-primary);animation:blink .9s step-end infinite}
+@keyframes blink{50%{border-color:transparent}}
+.fake-typing{font-family:var(--nd-font-mono);font-size:13px;line-height:1.7;white-space:pre-wrap}
+.scan-line{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#ff6a00,transparent);animation:scan 2.2s linear infinite;opacity:.8}
+@keyframes scan{0%{top:0}100%{top:100%}}
+</style>
+</head>
+<body>
+	<div class="site-wrap">
+    <div hidden id="xd-csrf--" x-csrf data-csrf data-host-main="argus.example" data-navigation-session="guest" data-navigation-user="0" data-navigation-assets="/static/assets/js/app.9328e4fbbdc9.js|/static/assets/css/app.2ba869cd2c29.css|/static/assets/css/page-product.3789b2a2f49d.css|/static/assets/css/app-tail.e7cf5cf43e08.css"></div>
+<div class="popup_fade"></div>
+
+<!-- popups auth (оставлены рабочие) -->
+<div class="popups popups--auth" id="reg">
+    <div class="block widthPopUp">
+<div class="close"><button type="button" class="nd-btn nd-btn--ghost nd-btn--md nd-btn--icon" aria-label="Закрыть"><i class="fa-regular fa-xmark" aria-hidden="true"></i></button></div>
+        <form method="post" action="/doregister" class="userform">
+        <div class="container flex-cont">
+        <div class="popup_head"><div class="popup_title">Регистрация</div><p class="popup_lead">Доступ к поиску и API — в одном аккаунте</p></div>
+        <div class="status"></div>
+<label class="nd-field"><span class="nd-field__label">Логин</span><input type="text" name="login" placeholder="латиница, цифры, _ . -" required></label>
+<label class="nd-field"><span class="nd-field__label">Почта</span><input type="email" name="email" placeholder="you@example.com" required></label>
+<label class="nd-field"><span class="nd-field__label">Пароль</span><span class="nd-field__box nd-password"><input type="password" name="password" required minlength="8"><button type="button" class="nd-password__eye" data-reveal aria-label="Показать"><i class="fa-regular fa-eye"></i></button></span></label>
+<button type="submit" class="nd-btn nd-btn--primary nd-btn--lg nd-btn--block">Создать аккаунт</button>
+    <div class="auth-foot"><span>Уже есть аккаунт? <a class="nd-link to-popup" href="#log">Войти</a></span></div>
+        </div></form>
+    </div>
+</div>
+<div class="popups popups--auth" id="log">
+    <div class="block widthPopUp">
+<div class="close"><button type="button" class="nd-btn nd-btn--ghost nd-btn--md nd-btn--icon" aria-label="Закрыть"><i class="fa-regular fa-xmark"></i></button></div>
+        <form method="post" action="/login" class="userform">
+        <div class="container flex-cont">
+        <div class="popup_head"><div class="popup_title">Вход</div><p class="popup_lead">Вернитесь к поискам и отчётам</p></div>
+        <div class="status"></div>
+<label class="nd-field"><span class="nd-field__label">Логин</span><input type="text" name="login" required></label>
+<label class="nd-field"><span class="nd-field__label">Пароль</span><span class="nd-field__box nd-password"><input type="password" name="password" required><button type="button" class="nd-password__eye" data-reveal><i class="fa-regular fa-eye"></i></button></span></label>
+<button type="submit" class="nd-btn nd-btn--primary nd-btn--lg nd-btn--block">Войти</button>
+    <div class="auth-foot"><span>Нет аккаунта? <a class="nd-link to-popup" href="#reg">Регистрация</a></span></div>
+        </div></form>
+    </div>
+</div>
+
+<svg class="site-logo-defs" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+	<symbol id="nl-mark" viewBox="0 0 1038 630">
+		<path class="nd-logo-shadow" d="M603.27 630V53.1479H742.894V516.77H983.217V630H603.27Z"></path>
+		<path class="nd-logo-shadow" d="M491.646 53.1479V630H373.177L143.291 297.071H139.624V630H0V53.1479H120.161L347.509 385.514H352.304V53.1479H491.646Z"></path>
+		<path class="nd-logo-fg" d="M658.053 576.852V0H797.677V463.622H1038V576.852H658.053Z"></path>
+		<path class="nd-logo-fg" d="M546.43 0V576.852H427.961L198.075 243.923H194.408V576.852H54.7834V0H174.945L402.292 332.366H407.088V0H546.43Z"></path>
+	</symbol>
+	<symbol id="argus-eye" viewBox="0 0 48 48">
+		<path d="M24 10C14 10 6.2 16.4 4 24c2.2 7.6 10 14 20 14s17.8-6.4 20-14C41.8 16.4 34 10 24 10Zm0 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Z" fill="currentColor" opacity=".95"/>
+		<circle cx="24" cy="24" r="3.2" fill="var(--nd-bg)" />
+		<path d="M24 6V8M24 40v2M8 24H6m36 0h-2M12.9 12.9 11.5 11.5M36.5 36.5 35.1 35.1M35.1 12.9 36.5 11.5M11.5 36.5 12.9 35.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+	</symbol>
+</svg>
+
+<!-- ===== NAVBAR — НЕ ТРОГАЕМ СТРУКТУРУ ШАБЛОНА ===== -->
+<section class="menu site-header site-header--landing">
+	<div class="site-header__row">
+		<a class="nd-pill site-header__logo" href="index.html" aria-label="Глаз Аргуса, главная" style="gap:10px;padding:0 14px 0 8px">
+			<svg viewBox="0 0 1038 630" aria-hidden="true" style="width:34px;height:20px;flex:none"><use href="#nl-mark"></use></svg>
+			<span class="argus-logo-text">ГЛАЗ <span>АРГУСА</span></span>
+			<span class="nd-badge nd-badge--orange" style="margin-left:4px">OSINT</span>
+		</a>
+<nav class="nd-pill nd-tabs site-header__nav" aria-label="Разделы">
+  <a class="nd-tab" href="index.html" aria-current="page">Главная</a>
+  <a class="nd-tab" href="#search">Поиск</a>
+  <a class="nd-tab" href="#pricing">Тарифы</a>
+  <a class="nd-tab" href="help.html">Справка</a>
+</nav>
+		<span class="site-header__spacer"></span>
+<div class="nd-menu-wrap site-header__lang">
+  <button type="button" class="nd-pill nd-menu-toggle site-header__lang-btn" data-menu-toggle="site-menu-lang" aria-haspopup="menu" aria-expanded="false" aria-label="Язык"><i class="fa-light fa-globe" aria-hidden="true"></i><span class="nd-menu-toggle__label">RU</span><i class="fa-regular fa-chevron-down nd-chevron" aria-hidden="true"></i></button>
+  <div class="nd-menu nd-menu--end" id="site-menu-lang" role="menu">
+		<button type="button" role="menuitemradio" aria-checked="true" data-lang="ru"><span class="nd-menu__code">RU</span>Русский<i class="fa-regular fa-check"></i></button>
+		<button type="button" role="menuitemradio" aria-checked="false" data-lang="en"><span class="nd-menu__code">EN</span>English<i class="fa-regular fa-check"></i></button>
+  </div>
+</div>
+		<button class="nd-pill nd-iconpill site-header__theme" type="button" data-theme-toggle data-label-light="Светлая тема" data-label-dark="Тёмная тема" aria-label="Тёмная тема" title="Тёмная тема">
+			<span class="nd-theme-icon"><span class="nd-theme-icon__glyph" data-icon="fa-sun-bright"><i class="fa-light fa-sun-bright"></i></span></span>
+		</button>
+		<a href="#reg" class="to-popup nd-pill site-header__register">Регистрация</a>
+		<a href="#log" class="to-popup nd-pill nd-pill--primary site-header__login-btn">Вход</a>
+	</div>
+</section>
+
+        <div class="site-main" data-navigation-kind="page" data-analytics="1">
+<div class="home-page" data-view-seed="807c8c69511a1ca8">
+<!-- ===== ВЕРХНЯЯ СЕКЦИЯ — СТРУКТУРА ШАБЛОНА СОХРАНЕНА ===== -->
+<section class="nd-hero nd-hero--mask-x nd-hero--full home-landing" style="min-height:min(92vh,max(640px,58vw))">
+  <div class="nd-hero__visual" aria-hidden="true">
+    <div class="hero-orb"></div>
+    <img data-theme-img="dark" class="nd-app-menu home-landing__app home-landing__app--dark" src="static/assets/prod_assets/app-menu-rage.ab1d76765a5c.svg" width="840" height="653" alt="" decoding="async" fetchpriority="high" style="opacity:.85">
+    <img data-theme-img="light" class="nd-app-menu home-landing__app home-landing__app--light" src="static/assets/prod_assets/app-menu-rage-light.7654352d8e69.svg" width="840" height="653" alt="" decoding="async" loading="lazy" style="opacity:.9">
+  </div>
+  <div class="container nd-hero__inner">
+    <div class="nd-hero__content" style="max-width:680px">
+      <span class="nd-badge nd-badge--orange" style="margin-bottom:14px"><i class="fa-solid fa-eye" aria-hidden="true"></i> 14 200+ баз • обновление ежедневно</span>
+      <h1 class="nd-hero__title">Там, где <span class="accent-word">обрывается след</span> — открывается Око</h1>
+      <p class="nd-hero__lead">Глаз Аргуса ищет <span>по приватным и слитым базам</span> — телефон, почта, ник, фото, паспорт, авто и соцсети. <span>Один запрос — полный цифровой след.</span></p>
+      <div class="hero-search" id="search">
+        <i class="fa-regular fa-magnifying-glass" style="color:var(--nd-primary)"></i>
+        <input id="heroQuery" type="text" placeholder="Телефон, email, @ник, ФИО или номер авто…" autocomplete="off">
+        <button class="nd-btn nd-btn--primary nd-btn--md" id="heroSearchBtn" type="button"><i class="fa-solid fa-bolt"></i> Найти</button>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+        <button class="nd-chip nd-chip--sm" data-demo="8 926 123-45-67"><i class="fa-light fa-phone"></i> телефон</button>
+        <button class="nd-chip nd-chip--sm" data-demo="ivan.petrov@gmail.com"><i class="fa-light fa-envelope"></i> почта</button>
+        <button class="nd-chip nd-chip--sm" data-demo="@argus_eye"><i class="fa-light fa-at"></i> ник</button>
+        <button class="nd-chip nd-chip--sm" data-demo="А 123 МР 77"><i class="fa-light fa-car"></i> авто</button>
+        <button class="nd-chip nd-chip--sm" data-demo="фото"><i class="fa-light fa-camera"></i> по фото</button>
+      </div>
+      <div class="nd-hero__actions" style="margin-top:22px">
+        <a class="nd-btn nd-btn--primary nd-btn--xl" href="#pricing"><i class="fa-solid fa-eye"></i> Открыть Око</a>
+        <a class="nd-btn nd-btn--bright nd-btn--xl" href="#demo"><i class="fa-regular fa-file-lines"></i> Пример отчёта</a>
+      </div>
+      <p class="argus-mono" style="margin-top:14px;color:var(--nd-muted)"><i class="fa-regular fa-shield-check" style="color:var(--nd-primary)"></i> Без сохранения запросов • Шифрование • Соответствие 152-ФЗ</p>
+    </div>
+  </div>
+  <a class="nd-pill nd-iconpill home-landing__next" href="#capabilities" aria-label="Листать вниз"><i class="fa-regular fa-chevron-down"></i></a>
+</section>
+
+<!-- KPI -->
+<section class="home-section">
+  <div class="container">
+    <div class="nd-card nd-card--lg">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+        <div class="argus-kpi"><span class="nd-mark nd-mark--orange"><i class="fa-regular fa-database"></i></span><div><b>14,2 млрд</b><small>записей в индексе</small></div></div>
+        <div class="argus-kpi"><span class="nd-mark"><i class="fa-regular fa-bolt"></i></span><div><b>0,8 сек</b><small>средний поиск</small></div></div>
+        <div class="argus-kpi"><span class="nd-mark nd-mark--green"><i class="fa-regular fa-shield-check"></i></span><div><b>27 400</b><small>источников</small></div></div>
+        <div class="argus-kpi"><span class="nd-mark nd-mark--blue"><i class="fa-regular fa-users"></i></span><div><b>1,2 млн</b><small>пользователей</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ЧТО ИЩЕМ -->
+<section class="home-section" id="capabilities">
+  <div class="container">
+    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><div class="nd-section-head__titlerow"><h2 class="nd-section-head__title">Что находит Око</h2></div><p class="nd-section-head__lead">Один идентификатор — десятки связанных сущностей. Ищем по приватным, слитым и открытым источникам.</p></div></div>
+    <div class="nd-cards stagger" style="--cols:3">
+      <div class="nd-card"><div class="nd-card__head"><span class="nd-mark nd-mark--orange"><i class="fa-light fa-phone"></i></span><span class="nd-badge nd-badge--orange">хит</span></div><h3 class="nd-h3">Телефон</h3><p class="nd-lead" style="font-size:13px">ФИО, оператор, регион, мессенджеры, слитые заказы, карты лояльности, соцсети по номеру.</p><div class="nd-tags"><span class="nd-chip nd-chip--sm">пробив</span><span class="nd-chip nd-chip--sm">Telegram</span><span class="nd-chip nd-chip--sm">WhatsApp</span></div></div>
+      <div class="nd-card"><div class="nd-card__head"><span class="nd-mark nd-mark--blue"><i class="fa-light fa-envelope"></i></span></div><h3 class="nd-h3">Почта и логин</h3><p class="nd-lead" style="font-size:13px">Утечки паролей, HaveIBeenPwned, форумы, регистрации, связанные телефоны и профили.</p><div class="nd-tags"><span class="nd-chip nd-chip--sm">утечки</span><span class="nd-chip nd-chip--sm">пароли</span><span class="nd-chip nd-chip--sm">OSINT</span></div></div>
+      <div class="nd-card"><div class="nd-card__head"><span class="nd-mark nd-mark--purple"><i class="fa-light fa-at"></i></span></div><h3 class="nd-h3">Никнейм</h3><p class="nd-lead" style="font-size:13px">Поиск по 400+ платформам: соцсети, гейминг, маркетплейсы, крипто-адреса, кэш GitHub.</p><div class="nd-tags"><span class="nd-chip nd-chip--sm">VK</span><span class="nd-chip nd-chip--sm">X / Twitter</span><span class="nd-chip nd-chip--sm">Discord</span></div></div>
+      <div class="nd-card"><div class="nd-card__head"><span class="nd-mark"><i class="fa-light fa-camera"></i></span><span class="nd-badge nd-badge--green">AI</span></div><h3 class="nd-h3">Фото</h3><p class="nd-lead" style="font-size:13px">Поиск по лицу и объектам: FindClone, Pimeyes, соцсети, утечки документов с фото.</p><div class="nd-tags"><span class="nd-chip nd-chip--sm">face search</span><span class="nd-chip nd-chip--sm">EXIF</span></div></div>
+      <div class="nd-card"><div class="nd-card__head"><span class="nd-mark nd-mark--yellow"><i class="fa-light fa-id-card"></i></span></div><h3 class="nd-h3">ФИО / Паспорт</h3><p class="nd-lead" style="font-size:13px">ИНН, СНИЛС, адреса, родственники, арбитраж, ФССП, ЕГРЮЛ — только из открытых и слитых баз.</p><div class="nd-tags"><span class="nd-chip nd-chip--sm">ФЛ</span><span class="nd-chip nd-chip--sm">прописка</span></div></div>
+      <div class="nd-card"><div class="nd-card__head"><span class="nd-mark nd-mark--red"><i class="fa-light fa-car"></i></span></div><h3 class="nd-h3">Авто и адрес</h3><p class="nd-lead" style="font-size:13px">VIN, госномер, ДТП, залоги, штрафы, кадастр, соседи по адресу, домовая книга.</p><div class="nd-tags"><span class="nd-chip nd-chip--sm">ГИБДД</span><span class="nd-chip nd-chip--sm">кадастр</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ДЕМО ОТЧЁТ -->
+<section class="home-section" id="demo">
+  <div class="container">
+    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><h2 class="nd-section-head__title">Пример отчёта за 0,8 секунды</h2><p class="nd-section-head__lead">Живая демонстрация — введите свой запрос выше или посмотрите как выглядит результат.</p></div><a class="nd-btn nd-btn--bright nd-btn--lg" href="#pricing">Попробовать <i class="fa-regular fa-arrow-right"></i></a></div>
+    <div class="nd-card" style="padding:0;overflow:hidden;display:grid;grid-template-columns:360px 1fr;min-height:420px">
+      <div style="background:var(--nd-surface-1);padding:18px;border-right:1px solid var(--nd-divider);position:relative;overflow:hidden">
+        <div class="scan-line"></div>
+        <div class="nd-badge nd-badge--orange" style="margin-bottom:12px"><i class="fa-solid fa-radar"></i> Сканирование… 27 источников</div>
+        <div style="display:flex;align-items:center;gap:12px;margin:12px 0 16px"><img src="https://i.pravatar.cc/100?img=12" alt="" style="width:56px;height:56px;border-radius:50%;object-fit:cover"><div><div style="font-weight:700">И. Петров</div><div class="argus-mono" style="color:var(--nd-muted)">id: 8 926 ***-45-67</div><span class="nd-badge nd-badge--green"><i class="fa-solid fa-check"></i> Верифицирован</span></div></div>
+        <div class="nd-facts nd-facts--divided">
+          <div class="nd-facts__row"><span class="nd-facts__label">Телефон</span><span class="nd-facts__value">8 926 123-45-67 <button class="nd-copy nd-copy--icon" data-copy="8 926 123-45-67"><i class="fa-regular fa-copy"></i></button></span></div>
+          <div class="nd-facts__row"><span class="nd-facts__label">Email</span><span class="nd-facts__value">i.petrov@gmail.com</span></div>
+          <div class="nd-facts__row"><span class="nd-facts__label">Telegram</span><span class="nd-facts__value">@petrov_ivan <span class="nd-badge nd-badge--blue">online</span></span></div>
+          <div class="nd-facts__row"><span class="nd-facts__label">Адрес</span><span class="nd-facts__value">Москва, ул. Тверская 7, кв. 42</span></div>
+        </div>
+        <div class="fake-typing" id="fakeTyping" style="margin-top:16px;color:var(--nd-muted)"></div>
+      </div>
+      <div style="padding:18px">
+        <div class="nd-tabs" style="margin-bottom:12px"><button class="nd-tab is-active" aria-current="page">Связи</button><button class="nd-tab">Утечки</button><button class="nd-tab">Соцсети</button><button class="nd-tab">История</button></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div class="nd-card nd-card--sm" style="background:var(--nd-surface-1);box-shadow:none"><div style="font-weight:600;margin-bottom:6px"><i class="fa-regular fa-users" style="color:var(--nd-primary)"></i> Родственники</div><div class="nd-lead" style="font-size:13px">Петрова А. И. — супруга, Петров Д. И. — сын, 2012 г.р.</div></div>
+          <div class="nd-card nd-card--sm" style="background:var(--nd-surface-1);box-shadow:none"><div style="font-weight:600;margin-bottom:6px"><i class="fa-regular fa-car" style="color:var(--nd-primary)"></i> Авто</div><div class="nd-lead" style="font-size:13px">Kia Rio, А 123 МР 799 — залог, 2 ДТП, без ограничений.</div></div>
+          <div class="nd-card nd-card--sm" style="background:var(--nd-surface-1);box-shadow:none"><div style="font-weight:600;margin-bottom:6px"><i class="fa-regular fa-triangle-exclamation" style="color:var(--nd-orange)"></i> Утечки</div><div class="nd-lead" style="font-size:13px">СДЭК 2023, Яндекс.Еда 2022, VK 2024 — пароли не найдены.</div></div>
+          <div class="nd-card nd-card--sm" style="background:var(--nd-surface-1);box-shadow:none"><div style="font-weight:600;margin-bottom:6px"><i class="fa-regular fa-building" style="color:var(--nd-primary)"></i> Компании</div><div class="nd-lead" style="font-size:13px">ИП Петров И. С. — ОГРН 304770..., действующий.</div></div>
+        </div>
+        <div class="nd-callout nd-callout--yellow" style="margin-top:14px"><i class="fa-solid fa-eye"></i><div><b>Аргус нашёл 47 совпадений</b><div class="nd-lead" style="font-size:13px">Сформирован отчёт PDF • Ссылки на первоисточники • Экспорт в CSV/JSON</div></div><a class="nd-btn nd-btn--primary nd-btn--sm" href="#pricing">Скачать PDF</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENTO ФУНКЦИОНАЛ -->
+<section class="home-section">
+  <div class="container">
+    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><h2 class="nd-section-head__title">Функционал</h2></div></div>
+    <div class="home-bento">
+      <a class="home-bento__tile home-bento__tile--menu" href="#search" style="min-height:300px;position:relative;overflow:hidden">
+        <span class="home-bento__shot" aria-hidden="true" style="position:absolute;inset:12px 12px auto 12px;height:140px;background:var(--nd-surface-1);border:1px solid var(--nd-border);border-radius:12px;display:grid;place-items:center">
+          <span class="nd-search" style="width:90%;max-width:420px"><i class="fa-regular fa-magnifying-glass"></i><span style="flex:1;text-align:left;color:var(--nd-muted)">8 926 123-45-67</span><span class="nd-badge nd-badge--orange">Найти</span></span>
+        </span>
+        <span class="home-bento__body" style="margin-top:150px">
+          <h3 class="home-bento__title">Всё в одном запросе</h3><span class="home-bento__text">Rage-поиск по всем базам: телефон, почта, ник, фото, гео — один вход, все связи.</span><span class="home-bento__link">Попробовать <i class="fa-regular fa-arrow-right"></i></span>
+        </span>
+      </a>
+      <a class="home-bento__tile home-bento__tile--lua" href="help.html" style="background:var(--nd-card-bg)">
+        <code class="nd-lua-example home-bento__code">curl -X POST https://api.argus.eye/v1/search \
+  -H "Authorization: Bearer $ARGUS_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "8 926 123-45-67",
+    "sources": ["leaks","osint","private"],
+    "deep": true
+  }'
+# → { "found": 47, "time": 0.64 }</code>
+        <span class="home-bento__body"><h3 class="home-bento__title">API и расширения</h3><span class="home-bento__text">Готовый REST API, вебхуки, бот для Telegram и плагин для Chrome.</span><span class="home-bento__link">Документация <i class="fa-regular fa-arrow-up-right"></i></span></span>
+      </a>
+      <a class="home-bento__tile" href="#pricing">
+        <span class="home-bento__panel" style="gap:8px">
+          <span class="home-bento__row"><span class="home-bento__icon" style="background:rgba(255,106,0,.12);color:var(--nd-primary);display:grid;place-items:center;border-radius:8px;width:32px;height:32px"><i class="fa-regular fa-shield-halved"></i></span><span class="home-bento__name">Приватные базы</span><span class="market-stars market-stars--sm"><i class="fa-solid fa-star is-on"></i><span class="market-stars__value">4,9</span></span><b class="home-bento__value">27k</b></span>
+          <span class="home-bento__row"><span class="home-bento__icon" style="background:rgba(34,197,94,.12);color:var(--nd-green);display:grid;place-items:center;border-radius:8px;width:32px;height:32px"><i class="fa-regular fa-lock-open"></i></span><span class="home-bento__name">Слитые базы</span><span class="market-stars market-stars--sm"><i class="fa-solid fa-star is-on"></i><span class="market-stars__value">5,0</span></span><b class="home-bento__value">14 млрд</b></span>
+          <span class="home-bento__row"><span class="home-bento__icon" style="background:rgba(59,130,246,.12);color:var(--nd-blue);display:grid;place-items:center;border-radius:8px;width:32px;height:32px"><i class="fa-regular fa-globe"></i></span><span class="home-bento__name">OSINT-источники</span><span class="market-stars market-stars--sm"><i class="fa-solid fa-star is-on"></i><span class="market-stars__value">4,8</span></span><b class="home-bento__value">1,8k</b></span>
+        </span>
+        <span class="home-bento__body"><h3 class="home-bento__title">Маркет данных</h3><span class="home-bento__text">Подключайте новые базы в один клик — или монетизируйте свои.</span><span class="home-bento__link">Открыть маркет <i class="fa-regular fa-arrow-right"></i></span></span>
+      </a>
+      <a class="home-bento__tile" href="#reg">
+        <span class="home-bento__panel">
+          <span class="home-bento__row home-bento__row--plain"><span class="home-bento__icon" style="width:28px;height:28px;display:grid;place-items:center;background:var(--nd-primary-soft);color:var(--nd-primary);border-radius:8px"><i class="fa-regular fa-eye"></i></span><span class="home-bento__name">Глаз Аргуса</span><b class="home-bento__value">от 490 ₽</b></span>
+          <span class="home-bento__actions"><span class="nd-chip nd-chip--outline home-bento__chip"><i class="fa-regular fa-bolt"></i><span class="nd-chip__text">100 запросов</span></span><span class="nd-chip nd-chip--outline home-bento__chip"><i class="fa-regular fa-infinity"></i><span class="nd-chip__text">Без лимитов</span></span></span>
+        </span>
+        <span class="home-bento__body"><h3 class="home-bento__title">Всё в личном кабинете</h3><span class="home-bento__text">История поисков, PDF-отчёты, API-ключи и управление доступом — без ожидания.</span><span class="home-bento__link">Личный кабинет <i class="fa-regular fa-arrow-right"></i></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ТАРИФЫ -->
+<section class="home-section" id="pricing">
+  <div class="container">
+    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><h2 class="nd-section-head__title">Тарифы</h2><p class="nd-section-head__lead">Оплата за результат — без подписок и скрытых условий. Есть бесплатный тест на 3 запроса.</p></div></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div class="nd-card price-card"><div class="nd-badge">Старт</div><div style="margin:10px 0 6px;font-size:32px;font-weight:800">490 ₽ <span style="font-size:13px;font-weight:400;color:var(--nd-muted)">/ 100 запросов</span></div><div class="nd-lead" style="font-size:13px">Для проверки контрагентов и разовых задач.</div><ul style="list-style:none;padding:0;display:grid;gap:8px;margin:14px 0"><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> Поиск по телефону, почте, нику</li><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> Слитые базы + OSINT</li><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> PDF-отчёт</li><li class="nd-muted"><i class="fa-regular fa-xmark"></i> Без API и фото-поиска</li></ul><a class="nd-btn nd-btn--bright nd-btn--lg nd-btn--block" href="#reg">Выбрать Старт</a></div>
+      <div class="nd-card price-card is-best"><div class="nd-badge nd-badge--orange">Популярный</div><div style="margin:10px 0 6px;font-size:32px;font-weight:800">1 490 ₽ <span style="font-size:13px;font-weight:400;color:var(--nd-muted)">/ 500 запросов</span></div><div class="nd-lead" style="font-size:13px">Для HR, СБ и частных детективов.</div><ul style="list-style:none;padding:0;display:grid;gap:8px;margin:14px 0"><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> Всё из «Старт» + приватные базы</li><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> Поиск по фото и гео</li><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> API + вебхуки + бот</li><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> Экспорт CSV/JSON, история</li></ul><a class="nd-btn nd-btn--primary nd-btn--lg nd-btn--block" href="#reg">Выбрать Профи</a><div class="argus-mono" style="text-align:center;margin-top:8px;color:var(--nd-muted)">Экономия 38% • Продление в 1 клик</div></div>
+      <div class="nd-card price-card"><div class="nd-badge">Макс</div><div style="margin:10px 0 6px;font-size:32px;font-weight:800">4 900 ₽ <span style="font-size:13px;font-weight:400;color:var(--nd-muted)">/ безлимит 30 дней</span></div><div class="nd-lead" style="font-size:13px">Для команд и колл-центров.</div><ul style="list-style:none;padding:0;display:grid;gap:8px;margin:14px 0"><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> Безлимит, до 10 ключей</li><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> Приоритет 0,4с, 99,9% SLA</li><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> SSO, аудит, выделенный менеджер</li><li><i class="fa-regular fa-check" style="color:var(--nd-green)"></i> Кастомные источники</li></ul><a class="nd-btn nd-btn--bright nd-btn--lg nd-btn--block" href="#reg">Выбрать Макс</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- КАК РАБОТАЕТ -->
+<section class="home-section">
+  <div class="container">
+    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><h2 class="nd-section-head__title">Как это работает</h2><p class="nd-section-head__lead">Три шага от запроса до досье с источниками и оценкой риска.</p></div></div>
+    <ol class="argus-steps stagger">
+      <li class="nd-card"><h3 class="nd-h3" style="padding-right:40px"><i class="fa-regular fa-magnifying-glass" style="color:var(--nd-primary)"></i> Введите что знаете</h3><p class="nd-lead" style="font-size:13px">Телефон, email, ник, фото, ФИО, адрес или авто. Можно вставить фрагмент переписки — ИИ вытащит идентификаторы.</p><div class="nd-badge nd-badge--muted">Шаг 1</div></li>
+      <li class="nd-card"><h3 class="nd-h3" style="padding-right:40px"><i class="fa-regular fa-radar" style="color:var(--nd-primary)"></i> Аргус сканирует</h3><p class="nd-lead" style="font-size:13px">Параллельный поиск по 27 400 базам, нормализация, дедупликация и граф связей за 0,8 секунды.</p><div class="nd-badge nd-badge--muted">Шаг 2</div></li>
+      <li class="nd-card"><h3 class="nd-h3" style="padding-right:40px"><i class="fa-regular fa-file-shield" style="color:var(--nd-primary)"></i> Получите отчёт</h3><p class="nd-lead" style="font-size:13px">PDF/JSON с источниками, уровнем доверия, риском и рекомендациями. Поделитесь ссылкой или по API.</p><div class="nd-badge nd-badge--muted">Шаг 3</div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="home-section">
+  <div class="container">
+    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><h2 class="nd-section-head__title">Нас выбирают СБ и compliance</h2><p class="nd-section-head__lead">4,9/5 на основе 3 200+ отзывов. Проверяем кандидатов, контрагентов, возвращаем долги.</p></div></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div class="nd-card"><div style="display:flex;align-items:center;gap:10px"><img src="https://i.pravatar.cc/100?img=8" style="width:36px;height:36px;border-radius:50%"><div><div style="font-weight:600">Анна, HRD</div><div class="argus-mono" style="color:var(--nd-muted)">TechCorp, 800+ проверок/мес</div></div><span class="market-stars" style="margin-left:auto"><i class="fa-solid fa-star is-on"></i>5,0</span></div><p class="nd-lead" style="font-size:13px;margin-top:12px">«Закрыли найм за день. Нашли фейковое резюме за 20 секунд — кандидат был в сливе с другим ФИО.»</p></div>
+      <div class="nd-card"><div style="display:flex;align-items:center;gap:10px"><img src="https://i.pravatar.cc/100?img=15" style="width:36px;height:36px;border-radius:50%"><div><div style="font-weight:600">Марат, СБ</div><div class="argus-mono" style="color:var(--nd-muted)">Логистика, проверка водителей</div></div><span class="market-stars" style="margin-left:auto"><i class="fa-solid fa-star is-on"></i>5,0</span></div><p class="nd-lead" style="font-size:13px;margin-top:12px">«VIN и паспорт в одном запросе. Увидели залог и банкротство — сэкономили 2,4 млн.»</p></div>
+      <div class="nd-card"><div style="display:flex;align-items:center;gap:10px"><img src="https://i.pravatar.cc/100?img=33" style="width:36px;height:36px;border-radius:50%"><div><div style="font-weight:600">Елена, юрист</div><div class="argus-mono" style="color:var(--nd-muted)">Взыскание</div></div><span class="market-stars" style="margin-left:auto"><i class="fa-solid fa-star is-on"></i>4,9</span></div><p class="nd-lead" style="font-size:13px;margin-top:12px">«Нашли актуальный адрес должника по старому номеру. Исполнили решение за неделю.»</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="home-section">
+  <div class="container" style="max-width:900px">
+    <div class="nd-section-head nd-section-head--h2 nd-section-head--lg"><div class="nd-section-head__main"><h2 class="nd-section-head__title">Частые вопросы</h2></div></div>
+    <div class="text nd-accordions" style="max-width:none">
+      <details><summary>Это законно?</summary><p>Мы агрегируем только открытые, слитые и приватные базы, к которым у нас есть лицензионный доступ. Вы получаете уже опубликованные данные. Использование — под вашу ответственность и в рамках 152-ФЗ.</p></details>
+      <details><summary>Откуда берутся приватные базы?</summary><p>Партнёрства с брокерами данных, верификация контрагентов, маркетплейсы и OSINT. Каждая запись имеет источник и дату — вы видите, откуда факт.</p></details>
+      <details><summary>Хранятся ли мои запросы?</summary><p>Нет. Запросы не логируются в открытом виде, отчёты хранятся только в вашем кабинете и удаляются по кнопке. Логи — только хеши для биллинга.</p></details>
+      <details><summary>Можно подключить свои базы?</summary><p>Да, на тарифе Макс — загрузите CSV/БД по API, настроим нормализацию и граф. Вы сами решаете, кому открыть доступ.</p></details>
+      <details><summary>Есть ли API для автоматизации?</summary><p>Да, REST, вебхуки и SDK для Python/Node. До 120 RPS на Макс, 99,9% SLA.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="home-section">
+  <div class="container">
+    <div class="nd-card" style="text-align:center;padding:32px;background:linear-gradient(135deg, rgba(255,106,0,.10), rgba(255,106,0,.02)), var(--nd-card-bg);border:1px solid rgba(255,106,0,.18)">
+      <span class="nd-badge nd-badge--orange"><i class="fa-solid fa-eye"></i> Там, где обрывается след, открывается Око</span>
+      <h2 style="font-size:32px;font-weight:800;letter-spacing:-.02em;margin:14px 0 8px">Откройте Око Аргуса сегодня</h2>
+      <p class="nd-lead" style="max-width:600px;margin:0 auto 18px">3 бесплатных запроса при регистрации • Отмена в любой момент • Поддержка 24/7</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="nd-btn nd-btn--primary nd-btn--xl" href="#reg"><i class="fa-solid fa-bolt"></i> Начать бесплатно</a><a class="nd-btn nd-btn--bright nd-btn--xl" href="help.html"><i class="fa-regular fa-message"></i> Связаться с нами</a></div>
+      <div class="argus-mono" style="margin-top:14px;color:var(--nd-muted)"><i class="fa-regular fa-lock"></i> Шифрование • <i class="fa-regular fa-shield-check"></i> 152-ФЗ • <i class="fa-regular fa-clock"></i> Ответ < 5 мин</div>
+    </div>
+  </div>
+</section>
+</div>
+        </div>
+<footer class="site-footer">
+	<div class="site-footer__top">
+		<div class="site-footer__brand">
+			<a href="index.html" class="site-footer__logo" aria-label="Глаз Аргуса" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--nd-fg)">
+				<svg viewBox="0 0 1038 630" aria-hidden="true" style="width:40px;height:24px"><use href="#nl-mark"></use></svg>
+				<span class="argus-logo-text">ГЛАЗ <span>АРГУСА</span></span>
+			</a>
+			<p class="site-footer__disclaimer">Глаз Аргуса — OSINT-платформа. Ищем информацию по приватным и слитым базам исключительно из легальных источников. Не нарушайте 152-ФЗ и права третьих лиц.</p>
+		</div>
+		<div class="site-footer__cols">
+			<nav class="site-footer__col" aria-label="Продукт"><h4>Продукт</h4><a href="#capabilities">Возможности</a><a href="#pricing">Тарифы</a><a href="help.html">API</a></nav>
+			<nav class="site-footer__col" aria-label="Компания"><h4>Компания</h4><a href="help.html">Справка</a><a href="mailto:hello@argus.eye">Контакты</a><a href="#">Статус</a></nav>
+			<nav class="site-footer__col" aria-label="Документы"><h4>Документы</h4><a href="#">Оферта</a><a href="#">Конфиденциальность</a><a href="#">152-ФЗ</a></nav>
+		</div>
+	</div>
+	<div class="site-footer__bottom"><span>© 2020–2026 Глаз Аргуса • Там, где обрывается след, открывается Око</span><span style="display:flex;gap:8px"><a href="#" class="nd-link">Telegram</a><a href="#" class="nd-link">VK</a><a href="#" class="nd-link">YouTube</a></span></div>
+</footer>
+        <div id="page-end" hidden=""></div>
+	</div>
+    <script src="static/assets/js/app.9328e4fbbdc9.js"></script>
+<script>
+// reveal on scroll + stagger + typing + search demo
+const ro = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal,.stagger,.argus-steps').forEach(el=>{el.classList.add('reveal');ro.observe(el)});
+document.querySelectorAll('.stagger').forEach(el=>ro.observe(el));
+document.querySelectorAll('.nd-cards').forEach(el=>el.classList.add('stagger'));
+document.querySelectorAll('.nd-cards,.argus-steps').forEach(el=>ro.observe(el));
+// fake typing
+const lines=["[0.00s] → подключено 27 400 источников","[0.21s] → найдено 12 телефонов, 8 почт, 3 авто","[0.48s] → дедупликация: 47 уникальных связей","[0.80s] ✓ отчёт готов • 14.2 млрд записей проверено"];
+const ft=document.getElementById('fakeTyping');
+if(ft){let i=0;function type(){if(i>=lines.length) return;let j=0;const line=lines[i];const el=document.createElement('div');ft.appendChild(el);const iv=setInterval(()=>{el.textContent=line.slice(0,++j);if(j>=line.length){clearInterval(iv);i++;setTimeout(type,320)}},12)}type();}
+// hero search
+const inp=document.getElementById('heroQuery'),btn=document.getElementById('heroSearchBtn');
+function doSearch(v){if(!v.trim()){inp.focus();inp.style.boxShadow='0 0 0 2px var(--nd-ring)';setTimeout(()=>inp.style.boxShadow='',800);return}
+ document.getElementById('demo')?.scrollIntoView({behavior:'smooth',block:'start'});
+ document.dispatchEvent(new CustomEvent('site:toast',{detail:{text:`Ищем: "${v}" → 47 совпадений за 0.8с (демо)`}}));
+ try{const t=document.createElement('div');t.className='nd-toast nd-toast--success';t.innerHTML='<span class="nd-toast__icon"><i class="fa-solid fa-check"></i></span><span class="nd-toast__body"><b class="nd-toast__title">Око нашло 47 совпадений</b><span class="nd-toast__text">Откройте тарифы, чтобы увидеть полный отчёт</span></span>';let c=document.querySelector('.nd-toasts');if(!c){c=document.createElement('div');c.className='nd-toasts';document.body.appendChild(c)}c.appendChild(t);setTimeout(()=>t.remove(),3000)}catch(e){}
+}
+btn?.addEventListener('click',()=>doSearch(inp.value));
+inp?.addEventListener('keydown',e=>{if(e.key==='Enter') doSearch(inp.value)});
+document.querySelectorAll('[data-demo]').forEach(b=>b.addEventListener('click',()=>{inp.value=b.dataset.demo;inp.focus();doSearch(inp.value)}));
+// copy
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{navigator.clipboard.writeText(b.dataset.copy);b.innerHTML='<i class="fa-solid fa-check"></i>';setTimeout(()=>b.innerHTML='<i class="fa-regular fa-copy"></i>',1200)}));
+// hero title parallax subtle
+let raf=null;
+window.addEventListener('scroll',()=>{
+ if(raf) return;
+ raf=requestAnimationFrame(()=>{
+  const y=scrollY*0.06;
+  const visual=document.querySelector('.nd-hero__visual .nd-app-menu');
+  if(visual && innerWidth>900) visual.style.transform=`translateY(calc(-50% + ${y}px)) perspective(1600px) rotateY(-24deg) rotateX(9deg) rotateZ(-5deg) scale(1.08)`;
+  raf=null;
+ });
+},{passive:true});
+</script>
+</body></html>
